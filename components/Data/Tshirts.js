@@ -1,0 +1,58 @@
+export const tdata = [
+  {
+    id: 0,
+    img: "https://rukminim1.flixcart.com/image/612/612/l2urv680/t-shirt/7/u/a/xl-hood-smart-black-smartees-original-image3nn2djgq8xv.jpeg?q=70",
+    title: "Smartess",
+    desc: "Men Printed Hooded Neck Black T-Shirt",
+    price: "₹239",
+  },
+  {
+    id: 1,
+    img: "https://rukminim1.flixcart.com/image/612/612/l2urv680/t-shirt/7/u/a/xl-hood-smart-black-smartees-original-image3nn2djgq8xv.jpeg?q=70",
+    title: "Smartess",
+    desc: "Men Printed Hooded Neck Black T-Shirt",
+    price: "₹239",
+  },
+  {
+    id: 2,
+    img: "https://rukminim1.flixcart.com/image/612/612/l2urv680/t-shirt/7/u/a/xl-hood-smart-black-smartees-original-image3nn2djgq8xv.jpeg?q=70",
+    title: "Smartess",
+    desc: "Men Printed Hooded Neck Black T-Shirt",
+    price: "₹239",
+  },
+  {
+    id: 3,
+    img: "https://rukminim1.flixcart.com/image/612/612/l2urv680/t-shirt/7/u/a/xl-hood-smart-black-smartees-original-image3nn2djgq8xv.jpeg?q=70",
+    title: "Smartess",
+    desc: "Men Printed Hooded Neck Black T-Shirt",
+    price: "₹239",
+  },
+  {
+    id: 4,
+    img: "https://rukminim1.flixcart.com/image/612/612/l2urv680/t-shirt/7/u/a/xl-hood-smart-black-smartees-original-image3nn2djgq8xv.jpeg?q=70",
+    title: "Smartess",
+    desc: "Men Printed Hooded Neck Black T-Shirt",
+    price: "₹239",
+  },
+  {
+    id: 5,
+    img: "https://rukminim1.flixcart.com/image/612/612/l2urv680/t-shirt/7/u/a/xl-hood-smart-black-smartees-original-image3nn2djgq8xv.jpeg?q=70",
+    title: "Smartess",
+    desc: "Men Printed Hooded Neck Black T-Shirt",
+    price: "₹239",
+  },
+  {
+    id: 6,
+    img: "https://rukminim1.flixcart.com/image/612/612/l2urv680/t-shirt/7/u/a/xl-hood-smart-black-smartees-original-image3nn2djgq8xv.jpeg?q=70",
+    title: "Smartess",
+    desc: "Men Printed Hooded Neck Black T-Shirt",
+    price: "₹239",
+  },
+  {
+    id: 7,
+    img: "https://rukminim1.flixcart.com/image/612/612/l2urv680/t-shirt/7/u/a/xl-hood-smart-black-smartees-original-image3nn2djgq8xv.jpeg?q=70",
+    title: "Smartess",
+    desc: "Men Printed Hooded Neck Black T-Shirt",
+    price: "₹239",
+  },
+];
