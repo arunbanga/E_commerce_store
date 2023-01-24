@@ -1,5 +1,8 @@
 import Head from "next/head";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import Carousel from "react-bootstrap/Carousel";
+import Image from "next/image";
+import Blogsection from "@/components/Blogsection";
 export default function Home() {
   return (
     <>
@@ -11,12 +14,50 @@ export default function Home() {
       </Head>
 
       <div>
+        <Carousel>
+          <Carousel.Item>
+            <Image
+              className="d-block h-72 w-full"
+              width={1600}
+              height={100}
+              src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>E-commerce-store</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              className="d-block h-72 w-full"
+              width={1600}
+              height={100}
+              src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Second slide"
+            />
+            <Carousel.Caption>
+              <h3>E-commerce-store</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image
+              className="d-block h-72 w-full"
+              src="https://images.pexels.com/photos/50987/money-card-business-credit-card-50987.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Third slide"
+              width={1203}
+              height={345}
+            />
+
+            <Carousel.Caption>
+              <h3>E-commerce-store</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
         <div>
-          <img
-            src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt="dh"
-            className="w-full"
-          />
+          <Blogsection />
         </div>
       </div>
     </>
