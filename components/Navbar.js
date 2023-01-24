@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRef } from "react";
+import styles from "../styles/navbar.module.css";
 import React from "react";
 import {
   AiOutlineShoppingCart,
@@ -25,22 +26,22 @@ const Navbar = ({ cart, addtoCart, removeFromCart, clearCart, subtotal }) => {
     <>
       <div className="flex flex-col justify-center items-center md:flex-row md:justify-start py-4 w-full sticky top-0 bg-white z-10">
         <div className="logo mx-5">
-          <Link href={"/"}>
+          <Link href={"/"} className={styles.nav_link}>
             <p>Logo</p>
           </Link>
         </div>
         <div>
           <ul className="flex space-x-8 font-bold">
-            <Link href={"/tshirts"}>
+            <Link href={"/tshirts"} className={styles.nav_link}>
               <li>T-shirts</li>
             </Link>
-            <Link href={"/mugs"}>
+            <Link href={"/mugs"} className={styles.nav_link}>
               <li>Mugs</li>
             </Link>
-            <Link href={"/hoodies"}>
+            <Link href={"/hoodies"} className={styles.nav_link}>
               <li>Hoodies</li>
             </Link>
-            <Link href={"/stickers"}>
+            <Link href={"/stickers"} className={styles.nav_link}>
               <li>Stickers</li>
             </Link>
           </ul>
