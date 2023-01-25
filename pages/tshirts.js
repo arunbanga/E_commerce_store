@@ -46,17 +46,23 @@ const tshirts = ({ products }) => {
                           {products[cur].size.includes("XXL") && (
                             <span>XXL</span>
                           )}
+                          Size: {products[cur].size}
                         </div>
                         <div className="text-gray-900 title-font text-lg font-medium">
-                          {/* Size: {products[cur].size} */}
                           {products[cur].color.includes("White") && (
                             <button className="border-2 border-gray-300 ml-1 bg-white rounded-full w-6 h-6 focus:outline-none"></button>
                           )}
                           {products[cur].color.includes("Black") && (
                             <button className="border-2 border-gray-300 ml-1 bg-black rounded-full w-6 h-6 focus:outline-none"></button>
                           )}
+                          {products[cur].color.includes("Gray") && (
+                            <button className="border-2 border-gray-300 ml-1 bg-gray-400 rounded-full w-6 h-6 focus:outline-none"></button>
+                          )}
                           {products[cur].color.includes("Blue") && (
                             <button className="border-2 border-gray-300 ml-1 bg-blue-900 rounded-full w-6 h-6 focus:outline-none"></button>
+                          )}
+                          {products[cur].color.includes("Yellow") && (
+                            <button className="border-2 border-gray-300 ml-1 bg-yellow-600 rounded-full w-6 h-6 focus:outline-none"></button>
                           )}
                         </div>
                       </div>
