@@ -114,7 +114,7 @@ const checkout = ({ cart, subtotal, addtoCart, removeFromCart }) => {
             </div>
           </div>
           <div className="px-2 w-1/2">
-            <div className=" mb-4">
+            <div className="mb-4">
               <label
                 htmlFor="pincode"
                 className="leading-7 text-sm text-gray-600"
@@ -147,7 +147,9 @@ const checkout = ({ cart, subtotal, addtoCart, removeFromCart }) => {
               return (
                 <li key={k}>
                   <div className="flex">
-                    <div className="w-2/3 font-semibold">{cart[k].name}</div>
+                    <div className="w-2/3 font-semibold">
+                      {cart[k].name} ({cart[k].size}/{cart[k].variant})
+                    </div>
                     <div className="w-1/3 flex  items-center justify-center text-lg">
                       <AiFillMinusCircle
                         className="cursor-pointer"

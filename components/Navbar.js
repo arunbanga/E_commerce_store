@@ -78,7 +78,9 @@ const Navbar = ({ cart, addtoCart, removeFromCart, clearCart, subtotal }) => {
               return (
                 <li key={k}>
                   <div className="flex">
-                    <div className="w-2/3 font-semibold">{cart[k].name}</div>
+                    <div className="w-2/3 font-semibold">
+                      {cart[k].name}({cart[k].size}/{cart[k].variant})
+                    </div>
                     <div className="w-1/3 flex  items-center justify-center text-lg">
                       <AiFillMinusCircle
                         className="cursor-pointer"

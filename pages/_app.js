@@ -2,9 +2,11 @@ import "@/styles/globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 export default function App({ Component, pageProps }) {
   const [cart, setCart] = useState({});
   const [subtotal, setSubTotal] = useState(0);
+  const router = useRouter();
   useEffect(() => {
     console.log("useEffect is running");
     try {
@@ -48,7 +50,15 @@ export default function App({ Component, pageProps }) {
     console.log(newCart);
     saveCart(newCart);
   };
-
+  const buyNow = (itemcode, qty, price, name, size, variant) => {
+    let newCart = { itemcode: { qty: 1, price, name, size, variant } };
+    saveCart(newCart);
+    setCart(newCart);
+    console.log(newCart);
+    saveCart(newCart);
+    // addtoCart(slug, 1, 239, "Men Black T-Shirt", "XL", "Red");
+    router.push("/checkout");
+  };
   const clearCart = () => {
     setCart({});
     saveCart({});
@@ -64,6 +74,7 @@ export default function App({ Component, pageProps }) {
       />
       <Component
         cart={cart}
+        buyNow={buyNow}
         addtoCart={addtoCart}
         removeFromCart={removeFromCart}
         clearCart={clearCart}
