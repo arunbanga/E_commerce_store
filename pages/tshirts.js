@@ -56,7 +56,7 @@ const tshirts = ({ products }) => {
                             <button className="border-2 border-gray-300 ml-1 bg-black rounded-full w-6 h-6 focus:outline-none"></button>
                           )}
                           {products[cur].color.includes("Gray") && (
-                            <button className="border-2 border-gray-300 ml-1 bg-gray-400 rounded-full w-6 h-6 focus:outline-none"></button>
+                            <button className="border-2 border-gray-300 ml-1 bg-gray-500 rounded-full w-6 h-6 focus:outline-none"></button>
                           )}
                           {products[cur].color.includes("Blue") && (
                             <button className="border-2 border-gray-300 ml-1 bg-blue-900 rounded-full w-6 h-6 focus:outline-none"></button>
